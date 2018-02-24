@@ -1,26 +1,15 @@
-var globalVariable = 'GLOBAL'
+var secondsCounter = 1
 
-// function declaration
-function add(a, b){
-    var someVariable = 123
-    globalVariable = 321
-    console.log(globalVariable)
-    return a + b
-}
+var intervalId = setInterval(
+    function(){
+        console.log(secondsCounter++)
+    },
+    1000
+)
 
-// function expression
-var add2 = function (a, b){
-    var someVariable = 123
-    globalVariable = 321
-    console.log(globalVariable)
-    return a + b
-}
-
-// assiging function to another variable
-var add3 = add2
-
-var result = add3(3, 5)
-
-console.log(result)
-
-console.log(someVariable)
+setTimeout(
+    function(){
+        clearInterval(intervalId)
+    },
+    5000
+)
