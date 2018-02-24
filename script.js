@@ -1,19 +1,10 @@
-// IIFEs - Immediately-invoked function expression
+var body = document.querySelector('body')
 
-(function (){
-    var secondsCounter = 1
+console.log(body)
 
-    var intervalId = setInterval(
-        function(){
-            console.log(secondsCounter++)
-        },
-        1000
-    )
-
-    setTimeout(
-        function(){
-            clearInterval(intervalId)
-        },
-        5000
-    )
-})()
+body.addEventListener(
+    'click',
+    function(){
+        console.log('Kilk!')
+    }
+)
