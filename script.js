@@ -53,7 +53,23 @@
     function endGame(){
         clearInterval(gameIntervalId)
         mole.remove()
-        alert('Game was ended!\nYour score was: ' + points + ' !')
+
+        document.querySelector('.end-modal .score')
+            .innerText = points + ' punktów!'
+
+        document.querySelector('.end-modal')
+            .style.display = 'block'
+
+        document.querySelector('.end-modal button')
+            .addEventListener(
+                'click',
+                function(){
+                    document.querySelector('.end-modal')
+                        .style.display = 'none'
+                    init()
+                    startGame()
+                }
+            )   
     }
 
     function flashBackground(){
@@ -81,7 +97,7 @@
 
     function init(){
         points = 0
-        time = 10
+        time = 3
         mole = null
 
         displayPoints(points)
