@@ -12,6 +12,10 @@
     function reduceTime(){
         time--
         displayTime(time)
+
+        if(time === 0){
+            endGame()
+        }
     }
 
     function displayPoints(pointsParam){
@@ -45,9 +49,15 @@
         return mole
     }
 
+    function endGame(){
+        clearInterval(gameIntervalId)
+        mole.remove()
+        alert('Game was ended!\nYour score was: ' + points + ' !')
+    }
+
     function init(){
         points = 0
-        time = 10
+        time = 3
         mole = makeMole()
 
         displayPoints(points)
