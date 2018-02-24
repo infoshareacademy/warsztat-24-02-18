@@ -1,4 +1,6 @@
-function main(){
+// IIFEs - Immediately-invoked function expression
+
+(function (){
     var secondsCounter = 1
 
     var intervalId = setInterval(
@@ -14,6 +16,4 @@ function main(){
         },
         5000
     )
-}
-
-main()
+})()
