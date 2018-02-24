@@ -94,7 +94,7 @@
 
     function init(){
         points = 0
-        time = 3
+        time = 10
         mole = null
 
         displayPoints(points)
