@@ -64,10 +64,7 @@
             .addEventListener(
                 'click',
                 function(){
-                    document.querySelector('.end-modal')
-                        .style.display = 'none'
-                    init()
-                    startGame()
+                    window.location = ''
                 }
             )   
     }
