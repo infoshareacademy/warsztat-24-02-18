@@ -1,13 +1,26 @@
+var globalVariable = 'GLOBAL'
 
 // function declaration
-function hello(name, numberOfLogs){ // parameter is a name for atributte that is passed  into function
-    for(var i = 0; i < numberOfLogs; i++) {
-        console.log('Hello ' + name + '!')
-    }
+function add(a, b){
+    var someVariable = 123
+    globalVariable = 321
+    console.log(globalVariable)
+    return a + b
 }
 
-// function invocation (call)
-hello('Mateusz', 100) // passing attribute 'Mateusz'
-hello('Ala', 2)
-hello('Ela', 3)
-hello({name: 'Stanisława'}, 1)
+// function expression
+var add2 = function (a, b){
+    var someVariable = 123
+    globalVariable = 321
+    console.log(globalVariable)
+    return a + b
+}
+
+// assiging function to another variable
+var add3 = add2
+
+var result = add3(3, 5)
+
+console.log(result)
+
+console.log(someVariable)
