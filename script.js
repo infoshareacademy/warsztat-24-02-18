@@ -41,6 +41,7 @@
             function(){
                 mole.remove()
                 addPoint()
+                flashBackground()
             }
         )
 
@@ -55,9 +56,20 @@
         alert('Game was ended!\nYour score was: ' + points + ' !')
     }
 
+    function flashBackground(){
+        var body = document.querySelector('body')
+        body.style.backgroundColor = 'red'
+        setTimeout(
+            function(){
+                body.style.backgroundColor = 'green'
+            },
+            100
+        )
+    }
+
     function init(){
         points = 0
-        time = 3
+        time = 10
         mole = makeMole()
 
         displayPoints(points)
