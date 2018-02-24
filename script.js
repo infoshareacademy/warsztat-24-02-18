@@ -14,6 +14,11 @@
         pointsContainer.innerText = pointsParam
     }
 
+    function displayTime(timeParam){
+        var timeContainer = document.querySelector('.time')
+        timeContainer.innerText = timeParam
+    }
+
     function makeMole(){
         var molePosX = Math.round(Math.random() * (window.innerWidth - window.innerHeight / 10))
         var molePosY = Math.round(Math.random() * (window.innerHeight - window.innerHeight / 10))
@@ -41,6 +46,7 @@
         mole = makeMole()
 
         displayPoints(points)
+        displayTime(time)
     }
 
     init()
