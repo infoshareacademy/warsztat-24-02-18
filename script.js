@@ -1,10 +1,3 @@
-var body = document.querySelector('body')
+(function(){
 
-console.log(body)
-
-body.addEventListener(
-    'click',
-    function(){
-        console.log('Kilk!')
-    }
-)
+})()
