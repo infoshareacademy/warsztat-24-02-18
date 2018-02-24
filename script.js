@@ -1,12 +1,13 @@
 
 // function declaration
-function hello(name){ // parameter is a name for atributte that is passed  into function
-    console.log('Hello ' + name + '!')
-    console.log('Hello ' + name + '!')
-    console.log('Hello ' + name + '!')
+function hello(name, numberOfLogs){ // parameter is a name for atributte that is passed  into function
+    for(var i = 0; i < numberOfLogs; i++) {
+        console.log('Hello ' + name + '!')
+    }
 }
 
 // function invocation (call)
-hello('Mateusz') // passing attribute 'Mateusz'
-hello('Ala')
-hello('Ela')
+hello('Mateusz', 100) // passing attribute 'Mateusz'
+hello('Ala', 2)
+hello('Ela', 3)
+hello({name: 'Stanisława'}, 1)
