@@ -1,5 +1,22 @@
 # Warsztat infoShare Academy z podstaw JavaScriptu - Lublin 24-02-2018
 
+## Informacje po warsztacie
+
+Na branchy `oop` znajduje się przerobiona gra wykorzystująca podejście obiektowe i JavaScriptowe portotypy.
+Jak zmieniać baranche i poznać lepiej GITa zobaczcie tutaj:
+https://www.youtube.com/watch?v=SWYqp7iY_Tc
+i tutaj:
+https://try.github.io/levels/1/challenges/1
+
+W kodzie są komentarze.
+
+W efekcie jesteśmy w stanie załączyć pliki gry do dowolnej storny, wskazać kontener (np. div) w którym gra ma się pojawić i bedize działać.
+
+Przykładowo - dwie niezaleźnie działające gry, korzystające oczywiście z tego samego kodu - http://warsztat-24-02-18-oop.surge.sh
+
+Koniecznie przejrzyjcie kod - miłej zabawy :)
+Mateusz Choma
+
 ## Program warsztatu
 
 - wstęp do systemów kontroli wersji i historia GIT
