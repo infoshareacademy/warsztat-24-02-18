@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Game.css">
 
     <title>Mole Game - infoShareAcademy</title>
 </head>
+
 <body>
-    <div class="points"></div>
-    <div class="time"></div>
+    <h1>Pierwsza instancja gry!</h1>
+    <div class="game1"></div>
 
-    <div class="modal start-modal">
-        <h4>Kliknij żeby zagrać!</h4>
-        <button>START!</button>
-    </div>
+    <h1>Druga instancja gry!</h1>
+    <div class="game2"></div>
 
-    <div class="modal end-modal">
-        <h4>Gra zaknczona! Twój wynik to:</h4>
-        <h4 class="score"></h4>
-        <button>RESTART!</button>
-    </div>
-    
-    <script src="script.js"></script>
+    <script src="Game.js"></script>
+    <script>
+        // I can add Game.js and Game.css to my HTML file
+        // write jutst one line as below
+        // and game runs in that container (div) that I want to
+        // how cool is that? ;)
+        new Game(document.querySelector('.game1'))
+        new Game(document.querySelector('.game2'))
+    </script>
 </body>
+
 </html>
